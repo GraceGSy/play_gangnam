@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/play-gangnam/static/css/main.6dc5662d.css",
+    "main.js": "/play-gangnam/static/js/main.055c3815.js",
+    "index.html": "/play-gangnam/index.html",
+    "main.6dc5662d.css.map": "/play-gangnam/static/css/main.6dc5662d.css.map",
+    "main.055c3815.js.map": "/play-gangnam/static/js/main.055c3815.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6dc5662d.css",
+    "static/js/main.055c3815.js"
+  ]
+}

@@ -1,0 +1,1 @@
+{"version":3,"file":"static/css/main.6dc5662d.css","mappings":"AAAA,UAEI,WAAW,CADX,QAEJ,CAEA,MAEE,WAAY,CADZ,UAEF","sources":["App.css"],"sourcesContent":["html,body{\n    margin:0;\n    height:100%;\n}\n\n#root {\n  width:100%;\n  height: 100%;\n}"],"names":[],"sourceRoot":""}
