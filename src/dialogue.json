@@ -24,7 +24,7 @@
 {"image":"carousel.png", "show":"date1", "event":"dialogue", "text":"You look around and spot a carousel. It seems like your date is looking at it too. Maybe a carnival ride could boost the spirits? But it looks like it costs money... and your rent is due this week. Maybe a silly joke could sufficiently lighten the mood?"},
 {"event":"option", "text":[["Suggest riding the carousel","1C"], ["Tell a silly joke", "1D"]]}],
 "1D": [{"event":"dialogue", "show":"date", "text":"You turn to your date: “Hey! … Why did the tomato turn red?” They look at you with confusion."}],
-"2A": [{"image":"stables.png", "event":"dialogue", "text":"You arrive at the stables."},
+"2A": [{"image":"stables.png", "event":"dialogue", "audio":"up", "text":"You arrive at the stables."},
 {"event":"dialogue", "show":"date1", "text":"The air is thick and stuffy. You can tell that everyone here is incredibly wealthy, dressed like they've gone horseback riding in the alps since before they learned to walk."},
 {"event":"dialogue", "show":"date1", "text":"Suddenly, you feel self conscious in your hoodie and ripped jeans. You take a deep breath and try your best to blend in."},
 {"event":"dialogue", "show":"date1", "text":"An attendant greets you at the door and leads you both into the barn. Her gaze is so sharp you feel your knees go weak just looking at her."},

@@ -15,24 +15,26 @@ const App = () => {
 	// const [eventCount, setEventCount] = React.useState();
 
 	function playAudio() {
-		var promise = document.querySelector("audio").play();
-        // var promise = media.play();
+		var audio = document.querySelector("audio")
+		audio.volume = 0;
+		audio.play();
+        // var audio = media.volume(0).play();
 
-		if (promise !== undefined) {
-		    promise.then(_ => {
-		    	console.log("playing...")
-		        // Autoplay started!
-		    }).catch(error => {
-		    	console.error("error...");
-		        // Autoplay was prevented.
-		        // Show a "Play" button so that user can start playback.
-		    });
-		}
+		// if (audio !== undefined) {
+		//     audio.then(_ => {
+		//     	console.log("playing...")
+		//         // Autoplay started!
+		//     }).catch(error => {
+		//     	console.error("error...");
+		//         // Autoplay was prevented.
+		//         // Show a "Play" button so that user can start playback.
+		//     });
+		// }
 	}
 
 	function start() {
 
-		// playAudio();
+		playAudio();
 
 		// setBackgroundUrl("url(neighborhood.jpg)");
 
@@ -68,10 +70,13 @@ const App = () => {
 			}
 
 			if (e.speaker && e.speaker === "date") {
-				console.log(e.speaker)
 				d3.select("#textContainer").style("color", `pink`);
 			} else {
 				d3.select("#textContainer").style("color", `white`);
+			}
+
+			if (e.audio) {
+				document.querySelector("audio").volume = 0.1;
 			}
 
 			if (e.event === "dialogue") {
@@ -138,7 +143,7 @@ const App = () => {
 		"height":"80%",
 		"backgroundSize":"cover",
 		"position":"fixed",
-		"right": 0,
+		"right": 25,
 		"bottom": 0,
 		"visibility": "hidden"
 	}
@@ -163,7 +168,7 @@ const App = () => {
 			<div id="options" style={button_style}>
 			</div>
 			<audio loop>
-				<source src="/gangnam_audio.mp3" type="audio/mpeg" />
+				<source src="/gangnam_audio.m4a" type="audio/mpeg" />
 			</audio>
 		</div>
 
