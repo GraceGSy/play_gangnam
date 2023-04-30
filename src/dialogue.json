@@ -1,39 +1,1110 @@
-{"start": [{"image":"neighborhood.png", "event":"dialogue", "text":"You stand outside the public square waiting for your date to arrive."},
-{"event":"dialogue", "text":"You’re so nervous your palms are sweating."},
-{"event":"dialogue", "text":"You look at your phone to check the time."},
-{"event":"dialogue", "text":"She is ten minutes late. Should you call? Send a text? Are they bailing??"},
-{"event":"dialogue", "text":"Just as you've made up your mind to suggest a reschedule, you hear someone call your name."},
-{"event":"dialogue", "speaker":"date", "text":"'Hi, [Your Name]!'"},
-{"event":"dialogue", "text":"You look up and your jaw drops."},
-{"event":"dialogue", "show":"date1", "text":"Your date is even more gorgeous than their dating profile pictures."},
-{"event":"dialogue", "show":"date1", "text":"They’re dressed in the most fashionable brands from head-to-toe."},
-{"event":"dialogue", "show":"date1", "text":"You gulp."},
-{"event":"dialogue", "show":"date1", "text":"They’re definitely out of your league. Wayyy out of your league."},
-{"event":"dialogue", "show":"date1", "text":"You take a deep breath and square your shoulders."},
-{"event":"dialogue", "show":"date1", "text":"Alright, you’re going to have to get through this date without revealing how much of a broke loser you are."},
-{"event":"dialogue", "show":"date1", "text":"You can do this, just act natural!"},
-{"event":"dialogue", "show":"date1", "text":"But before you can open your mouth to speak, your date starts talking."}, 
-{"event":"dialogue", "speaker":"date", "show":"date", "text":"I’m so excited to hang out with you today! I had an idea of what we could do. I’ve been dying to go to these stables on the edge of town, they offer dressage lessons on some of the most well-bred horses in town. What do you think?"},
-{"event":"dialogue", "show":"date", "text":"They look at you eagerly. Clearly they really want to do this. But this sounds expensive, and you can feel the (non)weight of your empty wallet in your pocket. You’d planned to just hang out at the park. It’s much cheaper, but you don’t want to disappoint them..."},
-{"event":"option", "text":[["That sounds great, let’s go!", "2A"], ["I was actually thinking we could walk around the park nearby.", "1A"]]}],
-"1A": [{"event":"dialogue", "speaker":"date", "show":"date1", "text":"'Oh...' your date responds, they sound a little deflated. 'Sure, I guess...'"},
-{"event":"dialogue", "show":"date1", "text":"You try to keep yourself from dying inside as you watch their smile fall."},
-{"event":"option", "text":[["'Alright, let’s head to the park!'", "1B"], ["'On second thought, let’s go to the stables!'", "2A"]]}],
-"1B": [{"image":"park_alt.png", "event":"dialogue", "show":"date1", "text":"You walk over to the park and stroll around the playground. It is a nice day, and there are lots of children playing on the swings."},
-{"event":"dialogue", "show":"date1", "text":"The two of you make small talk for a while, but you quickly realize that the two of you don't share many interests."},
-{"event":"dialogue", "show":"date1", "text":"Eventually, you can tell that your date has lost interest as the conversation lulls into silence."},
-{"event":"dialogue", "show":"date1", "text":"This isn't good. You were looking forward to this day, you can't just let your efforts go to waste."},
-{"event":"dialogue", "show":"date1", "text":"You know you need to starting winning her back – and quick!"},
-{"image":"carousel.png", "event":"dialogue", "text":"Looking around, you spot a carousel. It seems like your date is glancing at it too. Maybe a carnival ride could boost the spirits?"},
-{"event":"dialogue", "text":"But it looks like the ride costs money... and your rent is due this week. Maybe a silly joke could sufficiently lighten the mood?"},
-{"event":"option", "text":[["Suggest riding the carousel","1C"], ["Tell a silly joke", "1D"]]}],
-"1D": [{"event":"dialogue", "show":"date", "text":"You turn to your date: “Hey! ...Why did the tomato turn red?” They look at you with confusion."}],
-"2A": [{"image":"stables.png", "event":"dialogue", "audio":"up", "text":"You arrive at the stables."},
-{"event":"dialogue", "show":"date1", "text":"The air is thick and stuffy. You can tell that everyone here is incredibly wealthy, dressed like they've gone horseback riding in the alps since before they learned to walk."},
-{"event":"dialogue", "show":"date1", "text":"Suddenly, you feel self conscious in your hoodie and ripped jeans. You take a deep breath and try your best to blend in."},
-{"event":"dialogue", "show":"date1", "text":"An attendant greets you at the door and leads you both into the barn. Her gaze is so sharp you feel your knees go weak just looking at her."},
-{"event":"dialogue", "show":"date1","text":"'Here we have the horses available for you to ride today. This is our finest thoroughbred here –' She points to a massive horse with a shiny black coat. 'But for those on more of a budget,' you see the attendant eyeball you suspiciously as she says this 'we have our mules here.'"},
-{"event":"dialogue", "show":"date1", "text":"She points to the stall across the way. The poor mule blinks slowly at you, looking somewhat pathetic."},
-{"event":"dialogue", "speaker":"date", "show":"date", "text":"Your date turns to you – 'Ooooh I’ve always wanted to try the thoroughbred!' She smiles brightly. 'I heard he's the sweetest horse. And isn't he just so handsome!'"},
-{"event":"dialogue", "show":"date1", "text":"The attendant glares impatiently, waiting for your choice."},
-{"event":"option", "text":[["Yes, the thoroughbred of course!", "2C"], ["I’ll take the mule, I like his gritty look.", "2B"]]}]}
+{"instructions": [
+		{
+			"Text": "Welcome to <i>Gangnam Date</i>, a visual novel dating sim where you'll need to balance your budget while attempting to win the heart of your date in the vibrant neighborhood of Gangnam, Korea. In this game, you'll take on the role of a young professional who's been looking forward to this day for weeks. You've got a hot date with the girl of your dreams, but there's a catch - you're on a tight budget and need to make sure you don't overspend. You'll spend the day exploring Gangnam with your date, trying to find the perfect balance between romance and fiscal responsibility. Will you be able to charm your date without breaking the bank? Can you navigate the bustling streets of Gangnam and find hidden gems that won't cost a fortune? With multiple routes and endings to discover, the choices you make will determine the outcome of your date. So get ready to put your budgeting skills to the test and embark on a romantic adventure in one of Korea's most exciting neighborhoods. Are you ready to win your date's heart in <i>Gangnam Date</i>?",
+			"Event": "Fullscreen",
+			"Button": "start"
+		}
+	],
+	"start": [
+		{
+			"Text": "It is another hot morning in Gangnam, the sun shining relentlessly down on the neighborhood.",
+			"Event": "Dialogue",
+			"Image": "neighborhood.png",
+			"Show": "",
+			"Speaker": "",
+			"": ""
+		},
+		{
+			"Text": "You stand outside the public square waiting for your date to arrive, palms sweating from a combination of nerves and humidity. The collar of your shirt sticks to the back of your neck, and you hope that it hasn’t ruined the expensive cotton weaving.",
+			"Event": "Dialogue",
+			"Image": "",
+			"Show": "",
+			"Speaker": "",
+			"": ""
+		},
+		{
+			"Text": "You pull out your phone to check the time. They’re ten minutes late.",
+			"Event": "Dialogue",
+			"Image": "",
+			"Show": "",
+			"Speaker": "",
+			"": ""
+		},
+		{
+			"Text": "Should you call? Send a text? Are they bailing??",
+			"Event": "Dialogue",
+			"Image": "",
+			"Show": "",
+			"Speaker": "",
+			"": ""
+		},
+		{
+			"Text": "Just as you've made up your mind to text her again, you hear someone call your name.",
+			"Event": "Dialogue",
+			"Image": "",
+			"Show": "",
+			"Speaker": "",
+			"": ""
+		},
+		{
+			"Text": "Hi, [Your Name]!",
+			"Event": "Dialogue",
+			"Image": "",
+			"Show": "",
+			"Speaker": "date",
+			"": ""
+		},
+		{
+			"Text": "You look up and your jaw drops, your date is even more gorgeous than her dating profile pictures. She is dressed in the most fashionable brands from head-to-toe.",
+			"Event": "Dialogue",
+			"Image": "",
+			"Show": "date1",
+			"Speaker": "",
+			"": ""
+		},
+		{
+			"Text": "You gulp.",
+			"Event": "Dialogue",
+			"Image": "",
+			"Show": "date1",
+			"Speaker": "",
+			"": ""
+		},
+		{
+			"Text": "She’s definitely way out of your league. Way out of your league.",
+			"Event": "Dialogue",
+			"Image": "",
+			"Show": "date1",
+			"Speaker": "",
+			"": ""
+		},
+		{
+			"Text": "But she’d be the perfect eye candy by your side after you eventually climb your way to the top of your firm. Even though you are just an associate right now, you’ll get there eventually.",
+			"Event": "Dialogue",
+			"Image": "",
+			"Show": "date1",
+			"Speaker": "",
+			"": ""
+		},
+		{
+			"Text": "You can see it already — making it as partner with a fancy salary to match! You just need to find the right girl at your side first, someone to impress all of Gangnam!",
+			"Event": "Dialogue",
+			"Image": "",
+			"Show": "date1",
+			"Speaker": "",
+			"": ""
+		},
+		{
+			"Text": "You take a deep breath.",
+			"Event": "Dialogue",
+			"Image": "",
+			"Show": "date1",
+			"Speaker": "",
+			"": ""
+		},
+		{
+			"Text": "Alright, you’re going to have to get through this date without revealing how tight your budget is, since you told her you were already a partner at the firm. She’s going to have expectations.",
+			"Event": "Dialogue",
+			"Image": "",
+			"Show": "date1",
+			"Speaker": "",
+			"": ""
+		},
+		{
+			"Text": "But you can do this, just act natural!",
+			"Event": "Dialogue",
+			"Image": "",
+			"Show": "date1",
+			"Speaker": "",
+			"": ""
+		},
+		{
+			"Text": "Before you can open your mouth to speak, your date starts talking.",
+			"Event": "Dialogue",
+			"Image": "",
+			"Show": "date1",
+			"Speaker": "",
+			"": ""
+		},
+		{
+			"Text": "It’s so good to see you finally! I’ve never met a date at such a public place before. You’re kinda unique. I’m excited to see what you’ve planned today!",
+			"Event": "Dialogue",
+			"Image": "",
+			"Show": "date",
+			"Speaker": "date",
+			"": ""
+		},
+		{
+			"Text": "Oh no. You cringe mentally. This is definitely not the good start you had been aiming for. You’re going to have to work harder from now on.",
+			"Event": "Dialogue",
+			"Image": "",
+			"Show": "date1",
+			"Speaker": "",
+			"": ""
+		},
+		{
+			"Text": "You put on the brightest smile you can, and ask her what activities she had in mind. Can’t go wrong with hearing her thoughts.",
+			"Event": "Dialogue",
+			"Image": "",
+			"Show": "date1",
+			"Speaker": "",
+			"": ""
+		},
+		{
+			"Text": "Your date lights up at your question.",
+			"Event": "Dialogue",
+			"Image": "",
+			"Show": "date1",
+			"Speaker": "",
+			"": ""
+		},
+		{
+			"Text": "Actually, I’ve been dying to go to these stables on the edge of town, they offer dressage lessons on some of the most well-bred horses around. What do you think?",
+			"Event": "Dialogue",
+			"Image": "",
+			"Show": "date",
+			"Speaker": "date",
+			"": ""
+		},
+		{
+			"Text": "She looks at you eagerly. Clearly she really wants to do this. But this sounds expensive, and you can feel the (non)weight of your empty wallet in your pocket.",
+			"Event": "Dialogue",
+			"Image": "",
+			"Show": "date1",
+			"Speaker": "",
+			"": ""
+		},
+		{
+			"Text": "You had planned to just hang out at the park. It’s much cheaper, but you don’t want to disappoint them...",
+			"Event": "Dialogue",
+			"Image": "",
+			"Show": "date1",
+			"Speaker": "",
+			"": ""
+		},
+		{
+			"Text": [["That sounds great, let’s go!", "B"], ["How about walking around the Olympic park, instead?", "A"]],
+			"Event": "Option",
+			"Image": "",
+			"Show": "",
+			"Speaker": "",
+			"": ""
+		}],
+	"A": [
+		{
+			"Text": "Oh...",
+			"Event": "Dialogue",
+			"Image": "",
+			"Show": "date1",
+			"Speaker": "date",
+			"": ""
+		},
+		{
+			"Text": "Your date sounds a little deflated.",
+			"Event": "Dialogue",
+			"Image": "",
+			"Show": "date1",
+			"Speaker": "",
+			"": ""
+		},
+		{
+			"Text": "Sure, I guess...",
+			"Event": "Dialogue",
+			"Image": "",
+			"Show": "date1",
+			"Speaker": "date",
+			"": ""
+		},
+		{
+			"Text": "You try to keep yourself from dying inside as you watch their smile fall.",
+			"Event": "Dialogue",
+			"Image": "",
+			"Show": "date1",
+			"Speaker": "",
+			"": ""
+		},
+		{
+			"Text": [["Alright then, let’s go!", "A2"], ["On second thought, let’s go to the stables!", "B"]],
+			"Event": "Option",
+			"Image": "",
+			"Show": "",
+			"Speaker": "",
+			"": ""
+		}],
+	"A2": [
+		{
+			"Text": "You walk over to the park and stroll around the playground. It is a nice day, and there are lots of children playing on the swings.",
+			"Event": "Dialogue",
+			"Image": "park_alt.png",
+			"Show": "date1",
+			"Speaker": "",
+			"": ""
+		},
+		{
+			"Text": "The two of you make small talk for a while, but you quickly realize that you don't share many interests. The longer the walk drags on, the more you sense your date losing interest as the conversation falls into lulls of silence.",
+			"Event": "Dialogue",
+			"Image": "",
+			"Show": "date1",
+			"Speaker": "",
+			"": ""
+		},
+		{
+			"Text": "This isn't good. You were looking forward to this day, you can't just let your efforts go to waste. You need to start winning her back – and quick!",
+			"Event": "Dialogue",
+			"Image": "",
+			"Show": "date1",
+			"Speaker": "",
+			"": ""
+		},
+		{
+			"Text": "You look around and spot a carousel. Your date is glancing over at it too. Maybe a carnival ride could boost the spirits?",
+			"Event": "Dialogue",
+			"Image": "carousel.png",
+			"Show": "",
+			"Speaker": "",
+			"": ""
+		},
+		{
+			"Text": "But it looks like it costs money... and your rent is due this week. Maybe a silly joke could sufficiently lighten the mood?",
+			"Event": "Dialogue",
+			"Image": "",
+			"Show": "",
+			"Speaker": "",
+			"": ""
+		},
+		{
+			"Text": [["Suggest riding the carousel.", "A4"], ["Tell a silly joke.", "A3"]],
+			"Event": "Option",
+			"Image": "",
+			"Show": "",
+			"Speaker": "",
+			"": ""
+		}],
+	"A3":[
+		{
+			"Text": "You turn to your date: “Hey! ... Why did the tomato turn red?”",
+			"Event": "Dialogue",
+			"Image": "park_alt.png",
+			"Show": "date1",
+			"Speaker": "",
+			"": ""
+		},
+		{
+			"Text": "They look at you with confusion.",
+			"Event": "Dialogue",
+			"Image": "",
+			"Show": "date1",
+			"Speaker": "",
+			"": ""
+		},
+		{
+			"Text": "Already, you regret your decision, but you’ve committed to the joke now, so you have to see it through to the end!",
+			"Event": "Dialogue",
+			"Image": "",
+			"Show": "date1",
+			"Speaker": "",
+			"": ""
+		},
+		{
+			"Text": "You take a deep breath and deliver the punch line: “Because it saw the salad dressing!”",
+			"Event": "Dialogue",
+			"Image": "",
+			"Show": "date1",
+			"Speaker": "",
+			"": ""
+		},
+		{
+			"Text": "As soon as the words leave your mouth, you feel you soul fall into a pit. This is not going to go well.",
+			"Event": "Dialogue",
+			"Image": "",
+			"Show": "date1",
+			"Speaker": "",
+			"": ""
+		},
+		{
+			"Text": "Her expression changes in a moment.",
+			"Event": "Dialogue",
+			"Image": "",
+			"Show": "date",
+			"Speaker": "",
+			"": ""
+		},
+		{
+			"Text": "What’s wrong with you!!",
+			"Event": "Dialogue",
+			"Image": "",
+			"Show": "date",
+			"Speaker": "date",
+			"": ""
+		},
+		{
+			"Text": "Her cheeks are red and there are tears glistening in her eyes.",
+			"Event": "Dialogue",
+			"Image": "",
+			"Show": "date",
+			"Speaker": "",
+			"": ""
+		},
+		{
+			"Text": "This is the worst date ever. You’re too cheap to even spend a cent on a carnival ride!",
+			"Event": "Dialogue",
+			"Image": "",
+			"Show": "date",
+			"Speaker": "date",
+			"": ""
+		},
+		{
+			"Text": "“Wait!!” You try to explain yourself, but it is too late. She storms off in the opposite direction without even glancing back.",
+			"Event": "Dialogue",
+			"Image": "",
+			"Show": "",
+			"Speaker": "",
+			"": ""
+		},
+		{
+			"Text": "You feel regret churning in your gut as you watch her leave, her expensive five inch heels clicking sharply against the pavement. They must have been made of patent leather, and you can’t believe you fumbled such a catch.",
+			"Event": "Dialogue",
+			"Image": "",
+			"Show": "",
+			"Speaker": "",
+			"": ""
+		},
+		{
+			"Text": "Sighing inwardly, you make your way back to the subway station.",
+			"Event": "Dialogue",
+			"Image": "",
+			"Show": "",
+			"Speaker": "",
+			"": ""
+		},
+		{
+			"Text": "Seems like you need to lower your standards if you want to get a date on your budget.",
+			"Event": "Dialogue",
+			"Image": "",
+			"Show": "",
+			"Speaker": "",
+			"": ""
+		}],
+	"A4":[
+		{
+			"Text": "“Hey,” you say. “Why don’t we check out the carousel?”",
+			"Event": "Dialogue",
+			"Image": "park_alt.png",
+			"Show": "date1",
+			"Speaker": "",
+			"Audio":"0.1"
+		},
+		{
+			"Text": "Your date smiles for the first time in what seems like the past hour.",
+			"Event": "Dialogue",
+			"Image": "",
+			"Show": "date1",
+			"Speaker": "",
+			"": ""
+		},
+		{
+			"Text": "That sounds fun!",
+			"Event": "Dialogue",
+			"Image": "",
+			"Show": "date",
+			"Speaker": "date",
+			"": ""
+		},
+		{
+			"Text": "The two of you walk over and approach the operator. Your date looks at you expectantly.",
+			"Event": "Dialogue",
+			"Image": "carousel.png",
+			"Show": "date1",
+			"Speaker": "",
+			"": ""
+		},
+		{
+			"Text": "“It’s 25k won” the operator says. You hand over the cash.",
+			"Event": "Dialogue",
+			"Image": "",
+			"Show": "date1",
+			"Speaker": "",
+			"": ""
+		},
+		{
+			"Text": "The operator glares at you. “...Each,” he adds.",
+			"Event": "Dialogue",
+			"Image": "",
+			"Show": "date1",
+			"Speaker": "",
+			"": ""
+		},
+		{
+			"Text": "<i>What kind of magical carousel is this?</i> You wonder. That’s about as much as you spend on your dinners each week, although your diet mostly consists of eggs and rice.",
+			"Event": "Dialogue",
+			"Image": "",
+			"Show": "date1",
+			"Speaker": "",
+			"": ""
+		},
+		{
+			"Text": "Maybe you can save some cash and just watch her ride? That’s kind of creepy, but you can’t back out now!",
+			"Event": "Dialogue",
+			"Image": "",
+			"Show": "date1",
+			"Speaker": "",
+			"": ""
+		},
+		{
+			"Text": [["You go, I’ll just watch you!", "A5"],["Pay up and hop on.", "A6"]],
+			"Event": "Option",
+			"Image": "",
+			"Show": "",
+			"Speaker": "",
+			"": ""
+		}],
+	"A5":[
+		{
+			"Text": "Your date gives you a quizzical look. You try and play things off.",
+			"Event": "Dialogue",
+			"Image": "carousel.png",
+			"Show": "date1",
+			"Speaker": "",
+			"Audio": "0.2"
+		},
+		{
+			"Text": "“I’m scared of horses,” you say. <i>Wow, way to look like a huge wimp,</i> you think.",
+			"Event": "Dialogue",
+			"Image": "",
+			"Show": "date1",
+			"Speaker": "",
+			"": ""
+		},
+		{
+			"Text": "She looks you up and down.",
+			"Event": "Dialogue",
+			"Image": "",
+			"Show": "date1",
+			"Speaker": "",
+			"": ""
+		},
+		{
+			"Text": "I guess that’s why you didn’t want to go to the stables.",
+			"Event": "Dialogue",
+			"Image": "",
+			"Show": "date",
+			"Speaker": "date",
+			"": ""
+		},
+		{
+			"Text": "“Heh heh, yeah...” You try and act calm, cool, and collected while you stand outside the carousel. <i>This isn’t going well... you think.</i>",
+			"Event": "Dialogue",
+			"Image": "",
+			"Show": "date1",
+			"Speaker": "",
+			"": ""
+		},
+		{
+			"Text": "After about two minutes, the ride comes to a close and your date hops back down to join you. You try and see if she looks like she’s enjoying herself more now, but you can’t tell.",
+			"Event": "Dialogue",
+			"Image": "park_alt.png",
+			"Show": "date1",
+			"Speaker": "",
+			"": ""
+		},
+		{
+			"Text": "Look! I love tennis! Can we play? Please, please, please?",
+			"Event": "Dialogue",
+			"Image": "",
+			"Show": "date",
+			"Speaker": "date",
+			"": ""
+		},
+		{
+			"Text": "This is the most excited she’s been all day. You know that this time, you should definitely follow through.",
+			"Event": "Dialogue",
+			"Image": "",
+			"Show": "date1",
+			"Speaker": "",
+			"": ""
+		},
+		{
+			"Text": "You walk over to the attendant standing next to a shelf of rackets and balls.",
+			"Event": "Dialogue",
+			"Image": "tennis.png",
+			"Show": "date1",
+			"Speaker": "",
+			"": ""
+		},
+		{
+			"Text": "“Welcome to the Olympic Park Tennis Courts!” She says, in an overly cheerful manner. “The rental price for balls, rackets, and 30 minutes of court time for two is 150k won!”",
+			"Event": "Dialogue",
+			"Image": "",
+			"Show": "date1",
+			"Speaker": "",
+			"": ""
+		},
+		{
+			"Text": "You budgeted 60k won maximum for this date and you’ve already spent some of it. This would put you way over the line.",
+			"Event": "Dialogue",
+			"Image": "",
+			"Show": "date1",
+			"Speaker": "",
+			"If": "SoloRide"
+		},
+		{
+			"Text": "“Why is it so expensive?” You ask. You see your date shoot you a look out of the corner of your eye. Uh, oh...",
+			"Event": "Dialogue",
+			"Image": "",
+			"Show": "date1",
+			"Speaker": "",
+			"": ""
+		},
+		{
+			"Text": "The court attendant looks genuinely hurt. “Well, sir... this is the Olympic Park. Real Olympians have practiced on this court!!” She puffs out her chest and smiles at the last statement, as though she personally brought the Olympics here.",
+			"Event": "Dialogue",
+			"Image": "",
+			"Show": "date1",
+			"Speaker": "",
+			"": ""
+		},
+		{
+			"Text": "Your date looks at you expectantly.",
+			"Event": "Dialogue",
+			"Image": "",
+			"Show": "date1",
+			"Speaker": "",
+			"": ""
+		},
+		{
+			"Text": [["Sure!", "A9"], ["I think we’ll pass", "A8"]],
+			"Event": "Option",
+			"Image": "",
+			"Show": "",
+			"Speaker": "",
+			"": ""
+		}],
+	"A6":[
+		{
+			"Text": "You begrudgingly hand over the cash and glare back at the attendant. He snatches it out of your hands and counts it loudly before opening the gate for you and your date.",
+			"Event": "Dialogue",
+			"Image": "carousel.png",
+			"Show": "date1",
+			"Speaker": "",
+			"Audio": "0.4"
+		},
+		{
+			"Text": "You walk in and hop on a purple-painted horse. Your date climbs up next to you.",
+			"Event": "Dialogue",
+			"Image": "",
+			"Show": "date1",
+			"Speaker": "",
+			"": ""
+		},
+		{
+			"Text": "The carousel spins slowly, there’s nothing special about it. <i>Certainly</i> not work 25k won. You try to enjoy the ride but can’t help but think about how you just forked over more than twice the cost of your Netflix subscription for the month.",
+			"Event": "Dialogue",
+			"Image": "",
+			"Show": "date1",
+			"Speaker": "",
+			"": ""
+		},
+		{
+			"Text": "But you have to admit that it is nice to be sitting so close together. You think you see your date smiling, but you can’t tell. Maybe if you squint?",
+			"Event": "Dialogue",
+			"Image": "",
+			"Show": "date1",
+			"Speaker": "",
+			"": ""
+		},
+		{
+			"Text": "After about two minutes (really? Just two minutes?) the ride comes to a halt. The two of you hop down and walk back to the main pathway.",
+			"Event": "Dialogue",
+			"Image": "",
+			"Show": "date1",
+			"Speaker": "",
+			"": ""
+		},
+		{
+			"Text": "The two of you stroll down the main pathway, making superficial conversation. Suddenly, your date points out some tennis courts just down the way.",
+			"Event": "Dialogue",
+			"Image": "park_alt.png",
+			"Show": "date1",
+			"Speaker": "",
+			"": ""
+		},
+		{
+			"Text": "Look! I love tennis! Can we play? Please, please, please?",
+			"Event": "Dialogue",
+			"Image": "",
+			"Show": "date",
+			"Speaker": "date",
+			"": ""
+		},
+		{
+			"Text": "This is the most excited she’s been all day. You know that this time, you should definitely follow through.",
+			"Event": "Dialogue",
+			"Image": "",
+			"Show": "date1",
+			"Speaker": "",
+			"": ""
+		},
+		{
+			"Text": "You walk over to the attendant standing next to a shelf of rackets and balls.",
+			"Event": "Dialogue",
+			"Image": "tennis.png",
+			"Show": "date1",
+			"Speaker": "",
+			"": ""
+		},
+		{
+			"Text": "“Welcome to the Olympic Park Tennis Courts!” She says, in an overly cheerful manner. “The rental price for balls, rackets, and 30 minutes of court time for two is 150k won!”",
+			"Event": "Dialogue",
+			"Image": "",
+			"Show": "date1",
+			"Speaker": "",
+			"": ""
+		},
+		{
+			"Text": "You budgeted 60k won maximum for this date and you’ve already spent almost all of it. It’d be egregiously irresponsible if you paid for this on top of it...",
+			"Event": "Dialogue",
+			"Image": "",
+			"Show": "date1",
+			"Speaker": "",
+			"If": "DuoRide"
+		},
+		{
+			"Text": "“Why is it so expensive?” You ask. You see your date shoot you a look out of the corner of your eye. Uh, oh...",
+			"Event": "Dialogue",
+			"Image": "",
+			"Show": "date1",
+			"Speaker": "",
+			"": ""
+		},
+		{
+			"Text": "The court attendant looks genuinely hurt. “Well, sir... this is the Olympic Park. Real Olympians have practiced on this court!!” She puffs out her chest and smiles at the last statement, as though she personally brought the Olympics here.",
+			"Event": "Dialogue",
+			"Image": "",
+			"Show": "date1",
+			"Speaker": "",
+			"": ""
+		},
+		{
+			"Text": "Your date looks at you expectantly.",
+			"Event": "Dialogue",
+			"Image": "",
+			"Show": "date1",
+			"Speaker": "",
+			"": ""
+		},
+		{
+			"Text": [["Sure!", "A9"], ["I think we’ll pass", "A8"]],
+			"Event": "Option",
+			"Image": "",
+			"Show": "",
+			"Speaker": "",
+			"": ""
+		}],
+	"A8":[{
+			"Text": "Your date whips around to look at you.",
+			"Event": "Dialogue",
+			"Image": "",
+			"Show": "date",
+			"Speaker": "",
+			"": ""
+		},
+		{
+			"Text": "Seriously?! I already agreed to go to this stupid park with you, and now we can’t even do a single thing I want to do because it’s expensive?!",
+			"Event": "Dialogue",
+			"Image": "",
+			"Show": "date",
+			"Speaker": "date",
+			"": ""
+		},
+		{
+			"Text": "She stomps her foot.",
+			"Event": "Dialogue",
+			"Image": "",
+			"Show": "date",
+			"Speaker": "",
+			"": ""
+		},
+		{
+			"Text": "I’m going home. I can’t stand to be with a loser who can’t give me what I want because he’s too cheap.",
+			"Event": "Dialogue",
+			"Image": "",
+			"Show": "date",
+			"Speaker": "date",
+			"": ""
+		},
+		{
+			"Text": "I know what I’m worth, and I bet that thing about you being partner is all made up too. You guys are all the same.",
+			"Event": "Dialogue",
+			"Image": "",
+			"Show": "date",
+			"Speaker": "date",
+			"": ""
+		},
+		{
+			"Text": "You open your mouth to reply but it is too late. With that parting shot, your date is already quickly walking off. You and the tennis attendant stare at each other awkwardly.",
+			"Event": "Dialogue",
+			"Image": "",
+			"Show": "",
+			"Speaker": "",
+			"": ""
+		},
+		{
+			"Text": "Seems like you need to lower your standards if you’re going to find a successful date. You sigh inwardly. Maybe you should move to a cheaper neighborhood.",
+			"Event": "Dialogue",
+			"Image": "",
+			"Show": "",
+			"Speaker": "",
+			"": ""
+		}],
+	"A9":[
+		{
+			"Text": "You reach for your wallet, against your better judgement. Suddenly, you hear a rumbling. Is it your stomach protesting this extravagant spending? You ignore it and pull out your wallet.",
+			"Event": "Dialogue",
+			"Image": "",
+			"Show": "",
+			"Speaker": "",
+			"Audio": "0.4"
+		},
+		{
+			"Text": "The rumbling gets louder. It’s definitely not your stomach. You look around. Nobody else seems to notice. Are you going crazy?!",
+			"Event": "Dialogue",
+			"Image": "",
+			"Show": "",
+			"Speaker": "",
+			"": ""
+		},
+		{
+			"Text": "The rumbling keeps getting louder when suddenly...",
+			"Event": "Dialogue",
+			"Image": "",
+			"Show": "",
+			"Speaker": "",
+			"": ""
+		},
+		{
+			"Text": "Shame on you my friend, for playing pretend at being wealthy when you are not and ignoring your needs!! Next time, be yourself, with all your economic flaws, and maybe you won’t end up broke and alone!! This is the wisdom of PSY!! <br /> One last piece of advice: move to a cheaper neighborhood, maybe then you won’t have these struggles!! Goodbye, my friend!! <br /> Before you can find the words to respond, he floats away and disappears.",
+			"Event": "Video",
+			"Video": "ending1",
+			"Show": "",
+			"Speaker": "",
+			"": ""
+		}],
+	"B":[
+		{
+			"Text": "You arrive at the stables. The whole environment is stuffy, you can tell everyone here is incredibly wealthy and probably owns some luxurious estate outside the city. You take a deep breath and try your best to blend in.",
+			"Event": "Dialogue",
+			"Image": "stables.png",
+			"Show": "date1",
+			"Speaker": "",
+			"Audio": "0.1"
+		},
+		{
+			"Text": "The attendant walks you through the barn to the stables.",
+			"Event": "Dialogue",
+			"Image": "",
+			"Show": "date1",
+			"Speaker": "",
+			"": ""
+		},
+		{
+			"Text": "“Here we have the horses available for you to ride today. We have our finest thoroughbreds here – “ She points to a line of massive horses with a shiny coats. “But for those on more of a budget,” the attendant eyeball you suspiciously as she says this, “we have our mules here.”",
+			"Event": "Dialogue",
+			"Image": "",
+			"Show": "date1",
+			"Speaker": "",
+			"": ""
+		},
+		{
+			"Text": "She points to the stall across the way. The poor mule looks pathetic.",
+			"Event": "Dialogue",
+			"Image": "",
+			"Show": "date1",
+			"Speaker": "",
+			"": ""
+		},
+		{
+			"Text": "Your date turns to you, eyes glittering.",
+			"Event": "Dialogue",
+			"Image": "",
+			"Show": "date",
+			"Speaker": "",
+			"": ""
+		},
+		{
+			"Text": "I’m excited to try the thoroughbred! I heard they’re the sweetest horses. And aren't they just so handsome!",
+			"Event": "Dialogue",
+			"Image": "",
+			"Show": "date",
+			"Speaker": "date",
+			"": ""
+		},
+		{
+			"Text": "She looks at you excitedly. At her side, the attendant glares at you impatiently, waiting for your choice.",
+			"Event": "Dialogue",
+			"Image": "",
+			"Show": "date",
+			"Speaker": "",
+			"": ""
+		},
+		{
+			"Text": [["Yes, the thoroughbreds of course!", "B3"], ["I’ll take the mule, I like his gritty look.", "B2"]],
+			"Event": "Option",
+			"Image": "",
+			"Show": "",
+			"Speaker": "",
+			"": ""
+		}],
+	"B2":[
+		{
+			"Text": "Your date raises her eyebrow, then looks a little embarrassed. You gulp, hopefully this doesn’t ruin your chances.",
+			"Event": "Dialogue",
+			"Image": "",
+			"Show": "date1",
+			"Speaker": "",
+			"Audio": "0.3"
+		},
+		{
+			"Text": "The attendant leads you and your mules to the arena. You spend the next hour prancing around the dirt while the instructor coaches you through the movement.",
+			"Event": "Dialogue",
+			"Image": "riding.png",
+			"Show": "",
+			"Speaker": "",
+			"": ""
+		},
+		{
+			"Text": "The mules were clearly the wrong choice. Their gait is uneven and harsh, you find yourself getting tossed from side to side. It’s clearly rougher for your date. She’s having trouble controlling the creature and looks flustered and embarrassed. Uh oh...",
+			"Event": "Dialogue",
+			"Image": "",
+			"Show": "",
+			"Speaker": "",
+			"": ""
+		},
+		{
+			"Text": "You dismount after the lesson and you attendant leads your mules back to the stables. Your date is quiet and looking dejected. She was so excited to go to the stables... Maybe the experience disappointed her? You better make sure nothing goes wrong for the rest of the outing, or else you have no chance at a second date.",
+			"Event": "Dialogue",
+			"Image": "stables.png",
+			"Show": "date1",
+			"Speaker": "",
+			"": ""
+		},
+		{
+			"Text": "You walk up to the cashier at the front gate of the stables. The attendant types away at her computer. “Alright... for a lesson with two mules... Your total will be 600k won.”",
+			"Event": "Dialogue",
+			"Image": "",
+			"Show": "date1",
+			"Speaker": "",
+			"": ""
+		},
+		{
+			"Text": "Your jaw drops, you can’t help it. That’s half your rent! You’re already on a tight budget. There’s no way you can responsibly afford this.",
+			"Event": "Dialogue",
+			"Image": "",
+			"Show": "date1",
+			"Speaker": "",
+			"": ""
+		},
+		{
+			"Text": "Your date notices your hesitation and turns to look at you. She was already disappointed, you can’t make this worse!",
+			"Event": "Dialogue",
+			"Image": "",
+			"Show": "date1",
+			"Speaker": "",
+			"": ""
+		},
+		{
+			"Text": "B6",
+			"Event": "Goto",
+			"Image": "",
+			"Show": "",
+			"Speaker": "",
+			"": ""
+		}],
+	"B3":[
+		{
+			"Text": "You point towards the thoroughbred side and nod. You swear you hear a slight rumbling somewhere. Is that your stomach? You ignore it.",
+			"Event": "Dialogue",
+			"Image": "",
+			"Show": "date1",
+			"Speaker": "",
+			"Audio": "0.4"
+		},
+		{
+			"Text": "The attendant leads you and your horses to the arena. You spend the next hour prancing around the dirt while the instructor coaches you through the movement.",
+			"Event": "Dialogue",
+			"Image": "riding.png",
+			"Show": "",
+			"Speaker": "",
+			"": ""
+		},
+		{
+			"Text": "The thoroughbreds were certainly the right choice. Their movement is graceful and elegant, and your date looks like a natural sitting on top of her noble steed. You even catch her smiling a few times! This is going well... if you ignore how much you’re about to spend that is...",
+			"Event": "Dialogue",
+			"Image": "",
+			"Show": "",
+			"Speaker": "",
+			"": ""
+		},
+		{
+			"Text": "You dismount after the lesson and attendant leads your horses back to the stables. Your date is in a good mood and chatting away with you. This is going great! There might even be a second date in the future if you play your cards right.",
+			"Event": "Dialogue",
+			"Image": "stables.png",
+			"Show": "date1",
+			"Speaker": "",
+			"": ""
+		},
+		{
+			"Text": "You walk up to the cashier at the front gate of the stables. The attendant types away at her computer. “Alright... for a lesson with two thoroughbreds... Your total will be 1.2 mil won.”",
+			"Event": "Dialogue",
+			"Image": "",
+			"Show": "date1",
+			"Speaker": "",
+			"": ""
+		},
+		{
+			"Text": "Your jaw drops, you can’t help it. That’s just as much as your rent! There’s no way you can responsibly afford this.",
+			"Event": "Dialogue",
+			"Image": "",
+			"Show": "date1",
+			"Speaker": "",
+			"": ""
+		},
+		{
+			"Text": "But the date is going so well... and she’s the perfect partner for the highflying lawyer you’ll one day be... Maybe you should just cough it up and take some food delivery gigs?",
+			"Event": "Dialogue",
+			"Image": "",
+			"Show": "date1",
+			"Speaker": "",
+			"": ""
+		},
+		{
+			"Text": "B6",
+			"Event": "Goto",
+			"Image": "",
+			"Show": "",
+			"Speaker": "",
+			"": ""
+		}],
+	"B6":[
+		{
+			"Text": "“Uh...” You stammer, your palms are sweating. You need to decide. Put yourself in debt for the perfect partner... Or live within your means...",
+			"Event": "Dialogue",
+			"Image": "",
+			"Show": "date1",
+			"Speaker": "",
+			"": ""
+		},
+		{
+			"Text": [["You reach for your wallet.", "B7"], ["You turn to your date hoping she’ll cover it.", "B8"]],
+			"Event": "Option",
+			"Image": "",
+			"Show": "",
+			"Speaker": "",
+			"": ""
+		}],
+	"B7":[
+		{
+			"Text": "You move your hand towards your wallet. It seems like there’s an unseen force holding back your movements. It takes all your strength to make it your pocket and grab the –unsettlingly thin—stack of cash.",
+			"Event": "Dialogue",
+			"Image": "",
+			"Show": "",
+			"Speaker": "",
+			"": ""
+		},
+		{
+			"Text": "Suddenly, you hear a rumbling in the distance. Are you hearing things?",
+			"Event": "Dialogue",
+			"Image": "",
+			"Show": "",
+			"Speaker": "",
+			"": ""
+		},
+		{
+			"Text": "It starts to get louder. No one else is reacting. Are you going crazy? You turn to your date to ask if they hear something to when suddenly –",
+			"Event": "Dialogue",
+			"Image": "",
+			"Show": "",
+			"Speaker": "",
+			"Audio": "0.1"
+		},
+		{
+			"Text": "Hello my poor friend!! I’m here to help you!! Next time, watch your wallet – you’ll never find love pretending to be someone you’re not!! Forget the fancy clothes and cars and horses and be who you are!! And maybe try moving to a cheaper neighborhood where you can afford the rent, and the dates. <i>He winks at you.</i> This is the wisdom of PSY!! <br /> Before you can find the words to respond, he floats away and disappears.",
+			"Event": "Video",
+			"Video": "ending2",
+			"Show": "",
+			"Speaker": "",
+			"": ""
+		}],
+	"B8":[
+		{
+			"Text": "After a second, your date notices your gaze on her. Her eyes widen.",
+			"Event": "Dialogue",
+			"Image": "",
+			"Show": "date",
+			"Speaker": "",
+			"": ""
+		},
+		{
+			"Text": "Seriously?! You’re asking ME to pay?!",
+			"Event": "Dialogue",
+			"Image": "",
+			"Show": "date",
+			"Speaker": "date",
+			"": ""
+		},
+		{
+			"Text": "You’re the one who asked me on this date you... you loser!",
+			"Event": "Dialogue",
+			"Image": "",
+			"Show": "date",
+			"Speaker": "date",
+			"": ""
+		},
+		{
+			"Text": "She storms off abruptly. You don’t even have time to respond. By the time you get your wits about you she’s long gone and probably already ordering a rideshare at the gates.",
+			"Event": "Dialogue",
+			"Image": "",
+			"Show": "",
+			"Speaker": "",
+			"": ""
+		},
+		{
+			"Text": "The attendant looks at you. “Well, somebody has to pay.” She taps her pencil on the desk. You sigh and reach for your wallet.",
+			"Event": "Dialogue",
+			"Image": "",
+			"Show": "",
+			"Speaker": "",
+			"": ""
+		},
+		{
+			"Text": "You’ll have to scrape by for the next month to afford rent at your high rise. Maybe you should budget your dates better? <i>Nah...</i> you think. You need to impress the ladies if you want to get a piece of eye candy that all the high rollers in Gangnam will approve of.",
+			"Event": "Dialogue",
+			"Image": "",
+			"Show": "",
+			"Speaker": "",
+			"": ""
+		},
+		{
+			"Text": "You hand over the cash and shuffle towards the exit. There’s no way you can afford a rideshare now, and you grimace at the thought of walking back to the city in your new leather oxfords.",
+			"Event": "Dialogue",
+			"Image": "",
+			"Show": "",
+			"Speaker": "",
+			"": ""
+		},
+		{
+			"Text": "Just as think this, you see your date at the side of the street, flagging down her driver.",
+			"Event": "Dialogue",
+			"Image": "",
+			"Show": "",
+			"Speaker": "",
+			"": ""
+		},
+		{
+			"Text": "<i>Huh,</i> you think. <i>They do call it a ride</i> share <i>after all...</i>",
+			"Event": "Dialogue",
+			"Image": "",
+			"Show": "",
+			"Speaker": "",
+			"": ""
+		}]
+}
