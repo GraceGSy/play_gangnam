@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.6dc5662d.css",
-    "main.js": "/static/js/main.210206bb.js",
-    "index.html": "/index.html",
-    "main.6dc5662d.css.map": "/static/css/main.6dc5662d.css.map",
-    "main.210206bb.js.map": "/static/js/main.210206bb.js.map"
+    "main.css": "/play_gangnam/static/css/main.6dc5662d.css",
+    "main.js": "/play_gangnam/static/js/main.210206bb.js",
+    "index.html": "/play_gangnam/index.html",
+    "main.6dc5662d.css.map": "/play_gangnam/static/css/main.6dc5662d.css.map",
+    "main.210206bb.js.map": "/play_gangnam/static/js/main.210206bb.js.map"
   },
   "entrypoints": [
     "static/css/main.6dc5662d.css",
