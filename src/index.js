@@ -134,6 +134,16 @@ const App = () => {
 
 				var video = document.querySelector(`#${e.Video}`)
 				video.play();
+			} else if (e.Event === "End") {
+				d3.select("button").style("display", "none");
+				d3.select("#yourDate").style("display", "none");
+				d3.select("#textContainer").style("display", "none");
+				d3.select("#options").style("display", "none");
+				d3.select("#background").style("backgroundImage", "none").style("background", "rgba(0, 0, 0, 1)");
+
+
+				d3.select("#ending")
+					.style("display", "flex")				
 			}
 
 			
@@ -208,6 +218,17 @@ const App = () => {
 		"display":"none",
 	}
 
+	let end_scene = {
+		"display": "none",
+		"width": "100%",
+		"height": "100%",
+		"background": "rgba(0, 0, 0, 0)",
+		"color": "white",
+		"justifyContent": "center",
+		"alignItems": "center",
+		"fontFamily":"sans-serif"
+	}
+
 	return (
 
 		<div id="background" style={{"height":"100%",
@@ -243,6 +264,9 @@ const App = () => {
 			<video id="ending2" style={video_style}>
 				<source src="/ending2.mp4" type="video/mp4" />
 			</video>
+			<div id="ending" style={end_scene}>
+				<h1>THE END</h1>
+			</div>
 		</div>
 
 	)

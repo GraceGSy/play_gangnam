@@ -1,6 +1,6 @@
 {"instructions": [
 		{
-			"Text": "Welcome to <i>Gangnam Date</i>, a visual novel dating sim where you'll need to balance your budget while attempting to win the heart of your date in the vibrant neighborhood of Gangnam, Korea. In this game, you'll take on the role of a young professional who's been looking forward to this day for weeks. You've got a hot date with the girl of your dreams, but there's a catch - you're on a tight budget and need to make sure you don't overspend. You'll spend the day exploring Gangnam with your date, trying to find the perfect balance between romance and fiscal responsibility. Will you be able to charm your date without breaking the bank? Can you navigate the bustling streets of Gangnam and find hidden gems that won't cost a fortune? With multiple routes and endings to discover, the choices you make will determine the outcome of your date. So get ready to put your budgeting skills to the test and embark on a romantic adventure in one of Korea's most exciting neighborhoods. Are you ready to win your date's heart in <i>Gangnam Date</i>?",
+			"Text": "Welcome to <i>Gangnam Date</i>, a choose-your-own-adventure visual novel dating sim where you'll need to balance your budget while attempting to win the heart of your date in the vibrant neighborhood of Gangnam, Korea. <br /> In this game, you'll take on the role of a young professional who's been looking forward to this day for weeks. You've got a hot date with the girl of your dreams, but there's a catch - you're on a tight budget and need to make sure you don't overspend. You'll spend the day exploring Gangnam with your date, trying to find the perfect balance between romance and fiscal responsibility. Will you be able to charm your date without breaking the bank? Can you navigate the bustling streets of Gangnam and find hidden gems that won't cost a fortune? With multiple routes and endings to discover, the choices you make will determine the outcome of your date. So get ready to put your budgeting skills to the test and embark on a romantic adventure in one of Korea's most exciting neighborhoods. Are you ready to win your date's heart in <i>Gangnam Date</i>?",
 			"Event": "Fullscreen",
 			"Button": "start"
 		}
@@ -380,6 +380,14 @@
 		{
 			"Text": "Seems like you need to lower your standards if you want to get a date on your budget.",
 			"Event": "Dialogue",
+			"Image": "",
+			"Show": "",
+			"Speaker": "",
+			"": ""
+		},
+		{
+			"Text": "The End",
+			"Event": "End",
 			"Image": "",
 			"Show": "",
 			"Speaker": "",
@@ -1008,7 +1016,7 @@
 			"Image": "",
 			"Show": "",
 			"Speaker": "",
-			"": ""
+			"Audio": "0.2"
 		},
 		{
 			"Text": "Suddenly, you hear a rumbling in the distance. Are you hearing things?",
@@ -1102,6 +1110,14 @@
 		{
 			"Text": "<i>Huh,</i> you think. <i>They do call it a ride</i> share <i>after all...</i>",
 			"Event": "Dialogue",
+			"Image": "",
+			"Show": "",
+			"Speaker": "",
+			"": ""
+		},
+		{
+			"Text": "The End",
+			"Event": "End",
 			"Image": "",
 			"Show": "",
 			"Speaker": "",
