@@ -1,6 +1,6 @@
 {"instructions": [
 		{
-			"Text": "Welcome to <i>Gangnam Date</i>, a choose-your-own-adventure visual novel dating sim where you'll need to balance your budget while attempting to win the heart of your date in the vibrant neighborhood of Gangnam, Korea. <br /> In this game, you'll take on the role of a young professional who's been looking forward to this day for weeks. You've got a hot date with the girl of your dreams, but there's a catch - you're on a tight budget and need to make sure you don't overspend. You'll spend the day exploring Gangnam with your date, trying to find the perfect balance between romance and fiscal responsibility. Will you be able to charm your date without breaking the bank? Can you navigate the bustling streets of Gangnam and find hidden gems that won't cost a fortune? With multiple routes and endings to discover, the choices you make will determine the outcome of your date. So get ready to put your budgeting skills to the test and embark on a romantic adventure in one of Korea's most exciting neighborhoods. Are you ready to win your date's heart in <i>Gangnam Date</i>?",
+			"Text": ["<b>Welcome to <i>Gangnam Date</i>, a choose-your-own-adventure visual novel dating sim where you'll need to balance your budget while attempting to win the heart of your date in the vibrant neighborhood of Gangnam, Korea.</b>", "In this game, you'll take on the role of a young professional who's been looking forward to this day for weeks. You've got a hot date with the girl of your dreams, but there's a catch - you're on a tight budget and need to make sure you don't overspend. You'll spend the day exploring Gangnam with your date, trying to find the perfect balance between romance and fiscal responsibility. Will you be able to charm your date without breaking the bank? Can you navigate the bustling streets of Gangnam and find hidden gems that won't cost a fortune? With multiple routes and endings to discover, the choices you make will determine the outcome of your date. So get ready to put your budgeting skills to the test and embark on a romantic adventure in one of Korea's most exciting neighborhoods. Are you ready to win your date's heart in <i>Gangnam Date</i>?"],
 			"Event": "Fullscreen",
 			"Button": "start"
 		}
@@ -9,7 +9,7 @@
 		{
 			"Text": "It is another hot morning in Gangnam, the sun shining relentlessly down on the neighborhood.",
 			"Event": "Dialogue",
-			"Image": "neighborhood.png",
+			"Image": "./neighborhood.png",
 			"Show": "",
 			"Speaker": "",
 			"": ""
@@ -235,7 +235,7 @@
 		{
 			"Text": "You walk over to the park and stroll around the playground. It is a nice day, and there are lots of children playing on the swings.",
 			"Event": "Dialogue",
-			"Image": "park_alt.png",
+			"Image": "./park_alt.png",
 			"Show": "date1",
 			"Speaker": "",
 			"": ""
@@ -259,7 +259,7 @@
 		{
 			"Text": "You look around and spot a carousel. Your date is glancing over at it too. Maybe a carnival ride could boost the spirits?",
 			"Event": "Dialogue",
-			"Image": "carousel.png",
+			"Image": "./carousel.png",
 			"Show": "",
 			"Speaker": "",
 			"": ""
@@ -284,7 +284,7 @@
 		{
 			"Text": "You turn to your date: “Hey! ... Why did the tomato turn red?”",
 			"Event": "Dialogue",
-			"Image": "park_alt.png",
+			"Image": "./park_alt.png",
 			"Show": "date1",
 			"Speaker": "",
 			"": ""
@@ -397,7 +397,7 @@
 		{
 			"Text": "“Hey,” you say. “Why don’t we check out the carousel?”",
 			"Event": "Dialogue",
-			"Image": "park_alt.png",
+			"Image": "./park_alt.png",
 			"Show": "date1",
 			"Speaker": "",
 			"Audio":"0.1"
@@ -421,7 +421,7 @@
 		{
 			"Text": "The two of you walk over and approach the operator. Your date looks at you expectantly.",
 			"Event": "Dialogue",
-			"Image": "carousel.png",
+			"Image": "./carousel.png",
 			"Show": "date1",
 			"Speaker": "",
 			"": ""
@@ -470,7 +470,7 @@
 		{
 			"Text": "Your date gives you a quizzical look. You try and play things off.",
 			"Event": "Dialogue",
-			"Image": "carousel.png",
+			"Image": "./carousel.png",
 			"Show": "date1",
 			"Speaker": "",
 			"Audio": "0.2"
@@ -510,7 +510,7 @@
 		{
 			"Text": "After about two minutes, the ride comes to a close and your date hops back down to join you. You try and see if she looks like she’s enjoying herself more now, but you can’t tell.",
 			"Event": "Dialogue",
-			"Image": "park_alt.png",
+			"Image": "./park_alt.png",
 			"Show": "date1",
 			"Speaker": "",
 			"": ""
@@ -534,7 +534,7 @@
 		{
 			"Text": "You walk over to the attendant standing next to a shelf of rackets and balls.",
 			"Event": "Dialogue",
-			"Image": "tennis.png",
+			"Image": "./tennis.png",
 			"Show": "date1",
 			"Speaker": "",
 			"": ""
@@ -591,7 +591,7 @@
 		{
 			"Text": "You begrudgingly hand over the cash and glare back at the attendant. He snatches it out of your hands and counts it loudly before opening the gate for you and your date.",
 			"Event": "Dialogue",
-			"Image": "carousel.png",
+			"Image": "./carousel.png",
 			"Show": "date1",
 			"Speaker": "",
 			"Audio": "0.4"
@@ -631,7 +631,7 @@
 		{
 			"Text": "The two of you stroll down the main pathway, making superficial conversation. Suddenly, your date points out some tennis courts just down the way.",
 			"Event": "Dialogue",
-			"Image": "park_alt.png",
+			"Image": "./park_alt.png",
 			"Show": "date1",
 			"Speaker": "",
 			"": ""
@@ -655,7 +655,7 @@
 		{
 			"Text": "You walk over to the attendant standing next to a shelf of rackets and balls.",
 			"Event": "Dialogue",
-			"Image": "tennis.png",
+			"Image": "./tennis.png",
 			"Show": "date1",
 			"Speaker": "",
 			"": ""
@@ -779,7 +779,7 @@
 			"Image": "",
 			"Show": "",
 			"Speaker": "",
-			"": ""
+			"Audio": "0.1"
 		},
 		{
 			"Text": "The rumbling keeps getting louder when suddenly...",
@@ -801,7 +801,7 @@
 		{
 			"Text": "You arrive at the stables. The whole environment is stuffy, you can tell everyone here is incredibly wealthy and probably owns some luxurious estate outside the city. You take a deep breath and try your best to blend in.",
 			"Event": "Dialogue",
-			"Image": "stables.png",
+			"Image": "./stables.png",
 			"Show": "date1",
 			"Speaker": "",
 			"Audio": "0.1"
@@ -874,7 +874,7 @@
 		{
 			"Text": "The attendant leads you and your mules to the arena. You spend the next hour prancing around the dirt while the instructor coaches you through the movement.",
 			"Event": "Dialogue",
-			"Image": "riding.png",
+			"Image": "./riding.png",
 			"Show": "",
 			"Speaker": "",
 			"": ""
@@ -890,7 +890,7 @@
 		{
 			"Text": "You dismount after the lesson and you attendant leads your mules back to the stables. Your date is quiet and looking dejected. She was so excited to go to the stables... Maybe the experience disappointed her? You better make sure nothing goes wrong for the rest of the outing, or else you have no chance at a second date.",
 			"Event": "Dialogue",
-			"Image": "stables.png",
+			"Image": "./stables.png",
 			"Show": "date1",
 			"Speaker": "",
 			"": ""
@@ -939,7 +939,7 @@
 		{
 			"Text": "The attendant leads you and your horses to the arena. You spend the next hour prancing around the dirt while the instructor coaches you through the movement.",
 			"Event": "Dialogue",
-			"Image": "riding.png",
+			"Image": "./riding.png",
 			"Show": "",
 			"Speaker": "",
 			"": ""
@@ -955,7 +955,7 @@
 		{
 			"Text": "You dismount after the lesson and attendant leads your horses back to the stables. Your date is in a good mood and chatting away with you. This is going great! There might even be a second date in the future if you play your cards right.",
 			"Event": "Dialogue",
-			"Image": "stables.png",
+			"Image": "./stables.png",
 			"Show": "date1",
 			"Speaker": "",
 			"": ""
@@ -1032,7 +1032,7 @@
 			"Image": "",
 			"Show": "",
 			"Speaker": "",
-			"Audio": "0.1"
+			"Audio": "0.2"
 		},
 		{
 			"Text": "Hello my poor friend!! I’m here to help you!! Next time, watch your wallet – you’ll never find love pretending to be someone you’re not!! Forget the fancy clothes and cars and horses and be who you are!! And maybe try moving to a cheaper neighborhood where you can afford the rent, and the dates. <i>He winks at you.</i> This is the wisdom of PSY!! <br /> Before you can find the words to respond, he floats away and disappears.",

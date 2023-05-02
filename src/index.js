@@ -10,7 +10,7 @@ import dialogues from "./dialogue.json";
 
 const App = () => {
 
-	const [backgroundUrl, setBackgroundUrl] = React.useState("url(home.jpeg)");
+	const [backgroundUrl, setBackgroundUrl] = React.useState("url(./home.jpeg)");
 	const [events, setEvents] = React.useState();
 	const [name, setName] = React.useState("Your Name");
 
@@ -63,9 +63,15 @@ const App = () => {
 			}
 
 			if (e.Speaker && e.Speaker === "date") {
-				d3.select("#textContainer").style("color", `pink`);
+				d3.select("#textbox")
+					.style("color", `pink`)
+					.style("text-align", "right")
+					.style("font-style", "italic");
 			} else {
-				d3.select("#textContainer").style("color", `white`);
+				d3.select("#textbox")
+					.style("color", `white`)
+					.style("text-align", "left")
+					.style("font-style", "normal");
 			}
 
 			if (e.Audio) {
@@ -95,6 +101,10 @@ const App = () => {
 					.style("display", "block")
 					.style("margin-top", "20px")
 					.style("margin-bottom", "20px")
+					.style("padding", "10px")
+					.style("border-radius", "10px")
+					.style("cursor", "pointer")
+					.style("border", "solid 1px black")
 					.on("click", function (e, d) {
 						let newEvents = {"allEvents":[...dialogues[d[1]]], "eventCount":0};
 						setEvents(newEvents);
@@ -109,7 +119,14 @@ const App = () => {
 					.style("height", "80%")
 					.style("line-height", "2");
 				
-				fdiv.select("p").html(e.Text);
+				fdiv.select("#fullscreen_text")
+					.selectAll(".fparagraph")
+					.data(e.Text)
+					.join("div")
+					.attr("class", "fparagraph")
+					.style("margin-top", "20px")
+					.style("margin-bottom", "20px")
+					.html(d => d);
 			} else if (e.Event === "Video") {
 				d3.select("button").style("display", "none");
 				d3.select("#yourDate").style("display", "none");
@@ -124,7 +141,13 @@ const App = () => {
 					.style("display", "flex")
 					.style("z-index", "2");
 				
-				fdiv.select("p").html(e.Text);
+				fdiv.selectAll(".fparagraph")
+					.data([e.Text])
+					.join("div")
+					.attr("class", "fparagraph")
+					.style("margin-top", "20px")
+					.style("margin-bottom", "20px")
+					.html(d => d);
 
 				fdiv.selectAll("input").style("display", "none");
 
@@ -157,31 +180,42 @@ const App = () => {
 		"display":"flex",
 		"justifyContent":"center",
 		"flexDirection":"column",
+		"position": "fixed",
+		"top": "25%"
+	}
+
+	let play_button_style = {
+		"border": "solid 2px black",
+		"borderRadius": "10px",
+		"padding": "10px",
+		"letterSpacing": "2px",
+		"fontWeight": 600,
+		"cursor": "pointer"
 	}
 
 	let text_container = {
 		"visibility":"hidden",
 		"width": "0%",
 		"height": "30%",
-	    "background": "rgba(63, 79, 73, 0.80)",
+	    "background": "rgba(35, 46, 42, 0.93)",
 	    "color": "white",
 	    "fontFamily": "sans-serif",
 	    "paddingTop": "20px",
-	    "paddingLeft": "100px",
+	    "paddingLeft": "450px",
 	    "position": "fixed",
 	    "bottom":0,
 	    "overflow":"hidden"
 	}
 
 	let text_style = {
-		"width": "80%"
+		"width": "60%"
 	}
 
 	let fullscreen = {
 		"visibility":"hidden",
 		"width": "0%",
 		"height": "0%",
-	    "background": "rgba(63, 79, 73, 0.85)",
+	    "background": "rgba(35, 46, 42, 0.93)",
 	    "color": "white",
 	    "fontFamily": "sans-serif",
 	    "overflow":"hidden",
@@ -198,6 +232,16 @@ const App = () => {
 
 	let fullscreen_button = {
 		"marginLeft":"10px",
+		"border": "solid 1px black",
+		"borderRadius": "10px",
+		"padding": "10px 50px",
+		"letterSpacing": "2px",
+		"fontWeight": 600,
+		"cursor": "pointer"
+	}
+
+	let fullscreen_input = {
+		"padding": "8px",
 	}
 
 	let date_style = {
@@ -222,7 +266,7 @@ const App = () => {
 		"display": "none",
 		"width": "100%",
 		"height": "100%",
-		"background": "rgba(0, 0, 0, 0)",
+		"background": "rgba(0, 0, 0, 1)",
 		"color": "white",
 		"justifyContent": "center",
 		"alignItems": "center",
@@ -240,9 +284,9 @@ const App = () => {
 							"alignItems":"center",
 							"justifyContent":"center"}}>
 			<div id="fullscreen" style={fullscreen}>
-				<p style={fullscreen_style} id="fullscreen_text"></p>
+				<div style={fullscreen_style} id="fullscreen_text"></div>
 				<div>
-					<input type="text" id="lname" name="lname" value={name} onChange={(event) => setName(event.target.value)}/>
+					<input style={fullscreen_input} type="text" id="lname" name="lname" value={name} onChange={(event) => setName(event.target.value)}/>
 					<input style={fullscreen_button} className="button" type="button" value="I'M READY" onClick={begin} />
 				</div>
 			</div>
@@ -251,18 +295,18 @@ const App = () => {
 				<p style={text_style} id="textbox"></p>
 			</div>
 			<div id="buttons" style={button_style}>
-				<input id="playButton" className="button" type="button" value="PLAY GAME" onClick={start} />
+				<input id="playButton" className="button" type="button" value="PLAY GAME" onClick={start} style={ play_button_style } />
 			</div>
 			<div id="options" style={button_style}>
 			</div>
 			<audio loop>
-				<source src="/gangnam_audio.m4a" type="audio/mpeg" />
+				<source src="./gangnam_audio.m4a" type="audio/mpeg" />
 			</audio>
 			<video id="ending1" style={video_style}>
-				<source src="/ending1.mp4" type="video/mp4" />
+				<source src="./ending1.mp4" type="video/mp4" />
 			</video>
 			<video id="ending2" style={video_style}>
-				<source src="/ending2.mp4" type="video/mp4" />
+				<source src="./ending2.mp4" type="video/mp4" />
 			</video>
 			<div id="ending" style={end_scene}>
 				<h1>THE END</h1>
